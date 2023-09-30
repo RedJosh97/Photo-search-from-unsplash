@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@200;400&family=Sansita:wght@400;700&display=swap');
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Sansita', sans-serif;
+}
+
+body{
+    background: linear-gradient(45deg, rgb(96, 176, 160), rgb(157, 124, 157));
+    line-height: 1.6;
+}
+
+h1{
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+    color: #fff;
+    margin: 40px 0 60px 0;
+    text-shadow: 0 0 7px #138065;
+}
+
+form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 60px;
+}
+
+#search-input{
+    width: 600px;
+    max-width: 400px;
+    padding: 10px 20px;
+    border: none;
+    box-shadow: 0 0 6px rgba(0,0,0,0.2);
+    border-radius: 5px;
+    font-size: 18px;
+    color: #333;
+}
+
+#search-button {
+    padding: 10px 20px;
+    background: #138065;
+    color: #fff;
+    border: none;
+    font-size: 18px;
+    box-shadow: 0 0 6px rgba(0,0,0,0.2);
+    cursor: pointer;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+
+.search-results{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.search-result{
+    margin-bottom: 60px;
+    width: 30%;
+    height: 100%;
+    border-radius: 5px;
+    box-shadow: 0 0 6px rgba(0,0,0,0.2);
+}
+
+.search-result img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    transition: 0.5 ease-in;
+    display: block;
+    cursor: pointer;
+}
+
+.search-result:hover img{
+    transform: translateY(-7px);
+    border-radius: 12px;
+    /* opacity: 0.8; */
+}
+
+.search-result a{
+    text-decoration: none;
+    font-size: 20px;
+    color: #333;
+    display: block;
+    padding: 10px;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+#show-more-button{
+    cursor: pointer;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+    background: #138065;
+    color: #fff;
+    font-size: 18px;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin: 15px auto;
+    display: block;    
+    display: none;
+    margin-bottom: 50px;
+}
+
+@media screen and (max-width: 768px) {
+    .search-result{
+        padding: 20px;
+    }
+
+    .search-result{
+        width: 45%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+
+    .search-results{
+        padding: 20px;
+    }
+
+    .search-result{
+        width: 45%;
+    }
+
+    .search-result{
+        width: 100%;
+    }
+}
+
+
+
